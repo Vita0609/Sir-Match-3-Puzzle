@@ -1,1 +1,1 @@
-import './src/js/header.js';
+import './js/header.js';
