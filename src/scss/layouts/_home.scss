@@ -1,0 +1,126 @@
+@include media(mobile) {
+  .block-home {
+    padding: 144px 16px;
+    background-color: $color_fill;
+    overflow: hidden;
+    position: relative;
+    z-index: -1;
+
+    .container {
+      padding: 0;
+      position: relative;
+
+      &::before {
+        content: "";
+        display: block;
+        width: 350px;
+        height: 296px;
+        border-radius: 64px;
+        background-color: $color_orange_light;
+        position: absolute;
+        z-index: -1;
+        top: -20px;
+        left: 80px;
+      }
+    }
+
+    .title {
+      color: $color_braun;
+      @include h1_mobile;
+
+      .lightning {
+        display: inline-block;
+        width: 0;
+        height: 1.2em;
+        margin-top: -10px;
+
+        img {
+          max-width: unset;
+          height: unset;
+        }
+      }
+    }
+
+    .slogan {
+      color: $color_black;
+      @include body1;
+      margin-top: 24px;
+    }
+
+    .button {
+      color: $color_black;
+      background-color: $color_fill_green;
+      display: flex;
+      width: 288px;
+      height: 52px;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+      border-radius: 16px;
+      border: 2px solid #78AA39;
+      margin-top: 60px;
+    }
+
+    .game-picture {
+      display: none;
+    }
+  }
+}
+
+@include media(desktop) {
+  .block-home {
+    padding: 144px 16px;
+    background-color: $color_fill;
+    overflow: hidden;
+    position: relative;
+    z-index: -1;
+
+    .container {
+      padding: 0;
+      position: relative;
+
+      &::before {
+        content: none;
+      }
+    }
+
+    .title {
+      color: $color_braun;
+      @include h1_desktop;
+
+      .lightning {
+        display: inline-block;
+        width: 0;
+        height: 1.2em;
+        margin-top: -10px;
+
+        img {
+          max-width: unset;
+          height: unset;
+        }
+      }
+    }
+
+    .slogan {
+      color: $color_black;
+      @include body1;
+      margin-top: 24px;
+    }
+
+    .button {
+      color: $color_black;
+      background-color: $color_fill_green;
+      display: flex;
+      width: 288px;
+      height: 52px;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+      border-radius: 16px;
+      border: 2px solid #78AA39;
+      margin-top: 60px;
+    }
+
+    .game-picture {}
+  }
+}
