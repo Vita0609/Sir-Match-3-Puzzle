@@ -27,3 +27,88 @@ screen types:
 
   line-height: math.div(math.round($result * 100), 100);
 }
+
+@mixin h1_mobile {
+  font-family: 'Poppins Black';
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: 56px;
+}
+
+@mixin h1_desktop {
+  font-family: 'Poppins Black';
+  font-size: 54px;
+  letter-spacing: 0;
+  line-height: 80px;
+}
+
+@mixin h2 {
+  font-family: 'Poppins Bold';
+  font-size: 48px;
+  letter-spacing: 0;
+  line-height: 72px;
+}
+
+@mixin h3 {
+  font-family: 'Poppins Bold';
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: 48px;
+}
+
+@mixin h4 {
+  font-family: 'Poppins SemiBold';
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 32px;
+}
+
+@mixin button {
+  font-family: 'Poppins SemiBold';
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 32px;
+}
+
+@mixin button-link {
+  font-family: 'Poppins SemiBold';
+  text-decoration: underline;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 32px;
+}
+
+@mixin subtitle {
+  font-family: 'Poppins Medium';
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 32px;
+}
+
+@mixin body1 {
+  font-family: 'Poppins Bold';
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 32px;
+}
+
+@mixin body2 {
+  font-family: 'Poppins SemiBold';
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 32px;
+}
+
+@mixin body3 {
+  font-family: 'Poppins Medium';
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 22px;
+}
+
+@mixin body4 {
+  font-family: 'Poppins Bold';
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
