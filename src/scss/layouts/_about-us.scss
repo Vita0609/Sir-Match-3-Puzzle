@@ -14,6 +14,9 @@
 }
 
 .about-us-item {
+  // display: flex;
+  // width: 288px;
+  // height: 328px;
   border-radius: 56px;
   border: 6px solid $color_orange_stroke;
   background-color: $color_orange2;
@@ -27,8 +30,7 @@
   line-height: 1.5;
   color: $color_black;
   text-align: center;
-  // width: 224px;
-  // height: 264px;
+
 
 }
 
@@ -88,18 +90,21 @@
   .svg-icons {
     position: absolute;
     top: 50%; // Центрирование по вертикали
-    left: 0;
-    right: 0;
+    left: 8px;
+    right: 8px;
     display: flex;
     justify-content: space-between; // Распределение иконок с равными отступами
     align-items: center;
     transform: translateY(-50%); // Коррекция из-за `top: 50%`
+
 
     .svg-icon {
       width: 27px; // Ширина каждой SVG-иконки
       height: 26px; // Высота каждой SVG-иконки
       background-color: $color_green_dark3;
       border-radius: 4px;
+
+
     }
   }
 }
