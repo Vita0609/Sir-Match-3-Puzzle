@@ -13,6 +13,10 @@
       border-radius: 0px 0px 16px 16px;
       z-index: 99;
       max-width: 288px;
+      // left: 50%; // Центрируем
+      // transform: translateX(-50%); // Выравниваем по центру
+      // width: calc(100% - 32px);
+
 
       &:has(#burger-toggle:checked) {
         border-radius: 0px 0px 0px 16px;
@@ -62,11 +66,11 @@
 @include media(desktop) {
   .header {
 
+
     .nav {
       background-color: $color_braun;
       display: flex;
       position: fixed;
-      left: 72px;
       right: 72px;
       padding: 24px;
       justify-content: space-between;
@@ -74,6 +78,10 @@
       border-radius: 0px 0px 24px 24px;
       z-index: 99;
       max-width: 1056px;
+      width: calc(100% - 144px);
+      transform: translateX(-50%);
+      left: 50%;
+
 
       #burger-toggle,
       .nav-toggle {
