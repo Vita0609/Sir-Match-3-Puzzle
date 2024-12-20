@@ -71,11 +71,12 @@
   .png-container {
     position: relative;
     margin-top: 16px;
-    width: 270px;
+    // width: 270px;
     height: 48px;
     border-radius: 8px;
     background-color: $color_green_dark2;
     padding: 0 8px;
+
 
     .background-image {
       width: 100%;
