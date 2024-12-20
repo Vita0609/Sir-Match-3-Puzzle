@@ -1,85 +1,85 @@
 .benefits {
-    padding: 56px 0;
-    background-color: $color_fill_green;
+  padding: 56px 0;
+  background-color: $color_fill_green;
 }
 
 .benefits-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .benefits-item {
-    width: 208px;
-    border: 2px solid $color_orange_stroke;
-    border-radius: 24px;
-    padding: 16px;
-    background-color: $color_fill;
+  width: 208px;
+  border: 2px solid $color_orange_stroke;
+  border-radius: 24px;
+  padding: 16px;
+  background-color: $color_fill;
 }
 
 .back-item {
-    position: relative;
-    padding: 8px 16px 8px 96px;
+  position: relative;
+  padding: 8px 16px 8px 96px;
 }
 
 .back-item::before {
-    position: absolute;
-    top: 47px;
-    left: 16px;
-    content: "";
-    display: block;
-    width: 72px;
-    height: 86px;
+  position: absolute;
+  top: 47px;
+  left: 16px;
+  content: "";
+  display: block;
+  width: 72px;
+  height: 86px;
 }
 
 .back-item:nth-child(1)::before {
-    content: url('../../img/svg/num_1.svg');
+  content: url('../../img/svg/num_1.svg');
 }
 
 .back-item:nth-child(2)::before {
-    content: url('../../img/svg/num_2.svg');
+  content: url('../../img/svg/num_2.svg');
 }
 
 .back-item:nth-child(3)::before {
-    content: url('../../img/svg/num_3.svg');
+  content: url('../../img/svg/num_3.svg');
 }
 
 .back-item:nth-child(4)::before {
-    content: url('../../img/svg/num_4.svg');
+  content: url('../../img/svg/num_4.svg');
 }
 
 .back-item:nth-child(5)::before {
-    content: url('../../img/svg/num_5.svg');
+  content: url('../../img/svg/num_5.svg');
 }
 
 .back-item:nth-child(odd) {
-    border-radius: 80px 0 0 80px;
-    padding: 16px 16px 16px 96px;
-    background-color: $color_green_dark;
+  border-radius: 80px 0 0 80px;
+  padding: 16px 16px 16px 96px;
+  background-color: $color_green_dark;
 }
 
 .back-item:nth-child(even)::before {
-    top: 35px;
+  top: 35px;
 }
 
 .benefits-prim-title {
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 1.5;
-    margin-bottom: 32px;
-    color: $color_black;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.5;
+  margin-bottom: 32px;
+  color: $color_black;
 }
 
 .benefits-title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.71;
-    color: $color_braun;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.71;
+  color: $color_braun;
 }
 
 .benefits-text {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.57;
-    color: $color_black;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.57;
+  color: $color_black;
 }
