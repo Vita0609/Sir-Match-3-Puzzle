@@ -11,6 +11,7 @@
       justify-content: space-between;
       align-items: center;
       border-radius: 0px 0px 16px 16px;
+      z-index: 99;
 
       &:has(#burger-toggle:checked) {
         border-radius: 0px 0px 0px 16px;
@@ -70,6 +71,7 @@
       justify-content: space-between;
       align-items: center;
       border-radius: 0px 0px 24px 24px;
+      z-index: 99;
 
       #burger-toggle,
       .nav-toggle {
