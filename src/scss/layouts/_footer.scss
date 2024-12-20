@@ -1,4 +1,16 @@
 @include media(mobile) {
+    body {
+        background-color: $color_fill;
+    }
+
+    .body-1 .footer-section {
+        background-color: $color_fill_green;
+    }
+
+    .body-2 .footer-section {
+        background-color: $color_fill;
+    }
+
     .footer-container {
         position: relative;
         max-width: 288px;
