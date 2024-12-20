@@ -1,0 +1,101 @@
+@include media(mobile) {
+    .link-back-home {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin: 20px 0 50px 0;
+    }
+
+    .privacy-container {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.57;
+        color: $color_black;
+    }
+
+    .body {
+        background-color: $color_fill;
+    }
+
+    .policy-section {
+        padding-bottom: 24px;
+    }
+
+    .primary-title {
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 1.4;
+        margin-bottom: 32px;
+        color: $color_black;
+    }
+
+    .policy-title {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 1.5;
+        margin-bottom: 16px;
+        color: $color_black;
+    }
+
+    .contact-us {
+        padding-bottom: 56px;
+    }
+
+    .info-list {
+        list-style: disc;
+        margin-left: 20px;
+    }
+
+    .policy-list {
+        list-style: disc;
+        margin-left: 20px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
+    .policy-links {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.57;
+        text-decoration: underline;
+        color: $color_blue_link;
+    }
+
+
+
+}
+
+@include media(desktop) {
+    .contact-us {
+        padding-bottom: 112px;
+    }
+
+    .privacy-container {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 2.0;
+    }
+
+    .policy-title {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 1.5;
+    }
+
+    .primary-title {
+        font-size: 54px;
+    }
+
+    .policy-links {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .link-back-home {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 1.78;
+        margin-top: 28px;
+        margin-left: 0;
+    }
+}
