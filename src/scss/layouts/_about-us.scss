@@ -1,0 +1,52 @@
+.about-us {
+  padding: 56px 0;
+  background-color: $color_orange_light;
+
+}
+
+.about-us-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.5;
+  margin-bottom: 32px;
+  color: $color_black;
+  gap: 32px;
+}
+
+.about-us-item {
+  border-radius: 56px;
+  border: 6px solid $color_orange_stroke;
+  background-color: $color_orange;
+  padding: 16px;
+
+}
+
+.about-us-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $color_black;
+  text-align: center;
+  // width: 224px;
+  // height: 264px;
+
+}
+
+.about-us-text-container {
+  display: flex;
+  // padding: 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  border-radius: 40px;
+  // border: 16px solid $color_orange_stroke;
+  background-color: $color_orange;
+
+
+}
+
+.about-us-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
