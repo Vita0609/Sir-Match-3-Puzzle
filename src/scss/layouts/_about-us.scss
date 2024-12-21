@@ -111,21 +111,67 @@
 @include media(desktop) {
 
   .about-us-item {
-
+    display: flex;
     border-radius: 72px;
     border: 6px solid $color_orange_stroke;
     background-color: $color_orange2;
-    padding: 32px;
-    box-shadow: inset 0 0 0 16px $color_orange;
+    padding: 41.4px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 0 25px $color_orange;
+    width: 448px;
+    height: 368px;
+    margin-left: 71px;
     // position: relative;
+  }
+
+  .about-us-title {
+    position: sticky;
+    font-size: 48px;
+    margin-bottom: 64px;
+    color: $color_black;
+    font-weight: 700;
+  }
+
+
+  .about-us-text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 29px;
+    color: $color_black;
+    text-align: center;
   }
 
   .about-us-title {
     margin-bottom: 32px;
     font-weight: 700;
-    font-size: 32px;
+    font-size: 32;
     line-height: 1.5;
     margin-bottom: 32px;
     color: $color_black;
+  }
+
+  .about-us-subtitle {
+    display: flex;
+    width: 248px;
+    height: 72px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 18px;
+    border: 2px solid $color_orange_stroke;
+    background-color: $color_orange_light;
+    margin: -35.2px auto 0;
+    color: $color_braun_text;
+    margin-left: 174px;
+    font-weight: 600;
+    font-size: 20px;
+
+
+
+
+    @include body4;
+
   }
 }
