@@ -1,6 +1,7 @@
 @include media(mobile) {
   .header {
 
+
     .nav-menu {
       background-color: $color_braun;
       display: flex;
@@ -21,6 +22,7 @@
         right: 0;
       }
 
+
       #burger-toggle {
         display: none;
 
@@ -33,6 +35,8 @@
             display: none;
           }
         }
+
+
 
         &:checked {
           +.nav-toggle .nav-hamburger {
