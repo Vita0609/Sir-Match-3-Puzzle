@@ -18,13 +18,13 @@
     border-radius: 56px;
     border: 6px solid $color_orange_stroke;
     background-color: $color_orange2;
-    padding: 32px;
-    box-shadow: inset 0 0 0 16px $color_orange;
+    padding: 19.3px;
+    box-shadow: inset 0 0 0 8.8px $color_orange;
   }
 
   .about-us-text {
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.5;
     color: $color_black;
     text-align: center;
@@ -43,7 +43,7 @@
     border-radius: 18px;
     border: 2px solid $color_orange_stroke;
     background-color: $color_orange_light;
-    margin: -27px auto 0;
+    margin: -17.7px auto 0;
     color: $color_braun_text;
     @include body4;
 
