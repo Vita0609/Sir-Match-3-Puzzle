@@ -33,25 +33,28 @@
 }
 
 .back-item:nth-child(1)::before {
-  // content: url('./img/svg/num_1.svg');
   content: "";
   background-image: url('/img/svg/num1.svg');
 }
 
 .back-item:nth-child(2)::before {
-  content: url('/img/svg/num_2.svg');
+  content: "";
+  background-image: url('/img/svg/num_2.svg');
 }
 
 .back-item:nth-child(3)::before {
-  content: url('/img/svg/num_3.svg');
+  content: "";
+  background-image: url('/img/svg/num_3.svg');
 }
 
 .back-item:nth-child(4)::before {
-  content: url('/img/svg/num_4.svg');
+  content: "";
+  background-image: url('/img/svg/num_4.svg');
 }
 
 .back-item:nth-child(5)::before {
-  content: url('/img/svg/num_5.svg');
+  content: "";
+  background-image: url('/img/svg/num_5.svg');
 }
 
 .back-item:nth-child(odd) {
