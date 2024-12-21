@@ -9,11 +9,13 @@
 
 document.addEventListener("DOMContentLoaded", function () {
   const burgerToggle = document.querySelector('#burger-toggle'); // Чекбокс для управления меню
-  const navToggle = document.querySelector('.nav-toggle'); // Кнопка для бургер-меню
+  const navToggle = document.querySelector('.nav-toggle');
+  const navList = document.querySelector('.nav-list'); // Кнопка для бургер-меню
 
   // Когда кликаем на кнопку бургер-меню, переключаем состояние чекбокса
   navToggle.addEventListener('click', () => {
-    burgerToggle.checked = !burgerToggle.checked; // Переключаем состояние чекбокса
+    burgerToggle.checked = !burgerToggle.checked;
+    burgerToggle.checked ? navList.classList.add('nav-open') : navList.classList.remove('nav-open');// Переключаем состояние чекбокса
   });
 
   // Плавный переход между секциями

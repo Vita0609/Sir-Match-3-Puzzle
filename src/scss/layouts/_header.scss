@@ -12,15 +12,18 @@
       justify-content: space-between;
       align-items: center;
       border-radius: 0px 0px 16px 16px;
+
       z-index: 99;
       max-width: 288px;
 
 
 
       &:has(#burger-toggle:checked) {
+
         border-radius: 0px 0px 0px 16px;
         right: 0;
       }
+
 
 
       #burger-toggle {
@@ -31,9 +34,9 @@
             display: none;
           }
 
-          .nav-list {
-            display: none;
-          }
+          // .nav-list {
+          //   display: none;
+          // }
         }
 
 
@@ -50,7 +53,11 @@
       }
 
       .nav-list {
-        display: flex;
+        display: none;
+      }
+
+      .nav-list {
+        display: none;
         flex-direction: column;
         gap: 14px;
         position: absolute;
@@ -61,12 +68,19 @@
         background-color: $color_fill_green;
         color: $color_black;
 
+        &.nav-open {
+          display: flex;
+        }
+
         .nav-link {
           @include body4;
         }
       }
+
+
     }
   }
+
 }
 
 @include media(desktop) {
