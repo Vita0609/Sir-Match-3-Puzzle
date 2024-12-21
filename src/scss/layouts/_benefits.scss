@@ -1,90 +1,168 @@
-.benefits {
-  padding: 56px 0;
-  background-color: $color_fill_green;
+@include media(mobile) {
+  .benefits {
+    position: relative;
+    padding: 56px 0;
+    background-color: $color_green_dark;
+  }
+
+  .benefits-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .benefits-item {
+    width: 208px;
+    border: 2px solid $color_orange_stroke;
+    border-radius: 24px;
+    padding: 16px;
+    background-color: $color_fill;
+  }
+
+  .back-item {
+    position: relative;
+    padding: 8px 16px 8px 96px;
+  }
+
+  .back-item::before {
+    position: absolute;
+    top: 47px;
+    left: 16px;
+    content: "";
+    display: block;
+    width: 72px;
+    height: 86px;
+  }
+
+  .back-item:nth-child(1)::before {
+    content: "";
+    background-image: url('/img/svg/num1.svg');
+  }
+
+  .back-item:nth-child(2)::before {
+    content: "";
+    background-image: url('/img/svg/num_2.svg');
+  }
+
+  .back-item:nth-child(3)::before {
+    content: "";
+    background-image: url('/img/svg/num_3.svg');
+  }
+
+  .back-item:nth-child(4)::before {
+    content: "";
+    background-image: url('/img/svg/num_4.svg');
+  }
+
+  .back-item:nth-child(5)::before {
+    content: "";
+    background-image: url('/img/svg/num_5.svg');
+  }
+
+  .back-item:nth-child(odd) {
+    border-radius: 80px 0 0 80px;
+    padding: 16px 16px 16px 96px;
+    background-color: $color_green_dark;
+  }
+
+  .back-item:nth-child(even)::before {
+    top: 35px;
+  }
+
+  .benefits-prim-title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.5;
+    margin-bottom: 32px;
+    color: $color_black;
+  }
+
+  .benefits-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.71;
+    color: $color_braun;
+  }
+
+  .benefits-text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.57;
+    color: $color_black;
+  }
 }
 
-.benefits-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+@include media(desktop) {
+  .benefits-prim-title {
+    position: sticky;
+    font-size: 48px;
+    margin-bottom: 64px;
+  }
 
-.benefits-item {
-  width: 208px;
-  border: 2px solid $color_orange_stroke;
-  border-radius: 24px;
-  padding: 16px;
-  background-color: $color_fill;
-}
+  .benefits-list {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    column-gap: 24px;
+  }
 
-.back-item {
-  position: relative;
-  padding: 8px 16px 8px 96px;
-}
+  .benefits-item {
+    width: 420px;
+    height: 128px;
+  }
 
-.back-item::before {
-  position: absolute;
-  top: 47px;
-  left: 16px;
-  content: "";
-  display: block;
-  width: 72px;
-  height: 86px;
-}
+  .back-item::before {
+    top: 30px;
+    left: 0;
+  }
 
-.back-item:nth-child(1)::before {
-  content: "";
-  background-image: url('/img/svg/num1.svg');
-}
 
-.back-item:nth-child(2)::before {
-  content: "";
-  background-image: url('/img/svg/num_2.svg');
-}
+  .back-item:nth-child(odd) {
+    padding: 0;
+    padding-left: 100px;
+    background-color: transparent;
+  }
 
-.back-item:nth-child(3)::before {
-  content: "";
-  background-image: url('/img/svg/num_3.svg');
-}
+  .back-item:nth-child(even)::before {
+    top: 25px;
+  }
 
-.back-item:nth-child(4)::before {
-  content: "";
-  background-image: url('/img/svg/num_4.svg');
-}
+  .back-item {
+    padding: 0;
+    padding-left: 100px;
+  }
 
-.back-item:nth-child(5)::before {
-  content: "";
-  background-image: url('/img/svg/num_5.svg');
-}
+  .benefits-text {
+    font-weight: 600;
+    font-size: 16px;
+  }
 
-.back-item:nth-child(odd) {
-  border-radius: 80px 0 0 80px;
-  padding: 16px 16px 16px 96px;
-  background-color: $color_green_dark;
-}
+  .benefits-title {
+    font-weight: 700;
+    font-size: 16px;
+  }
 
-.back-item:nth-child(even)::before {
-  top: 35px;
-}
+  .green-wrap {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    border-radius: 0 120px 120px 0;
+    width: 1038px;
+    height: 664px;
+    background-color: $color_fill_green;
+  }
 
-.benefits-prim-title {
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 1.5;
-  margin-bottom: 32px;
-  color: $color_black;
-}
-
-.benefits-title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.71;
-  color: $color_braun;
-}
-
-.benefits-text {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.57;
-  color: $color_black;
+  .yellow-wrap {
+    position: absolute;
+    top: 48%;
+    right: 0;
+    transform: translateY(-50%);
+    border-radius: 96px 0 0 96px;
+    width: 678px;
+    height: 424px;
+    background-color: $color_orange_light;
+  }
 }
