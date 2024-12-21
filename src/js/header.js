@@ -1,12 +1,3 @@
-// const burgerToggle = document.querySelector('#burger-toggle');
-// const navToggle = document.querySelector('.nav-toggle');
-
-// navToggle.addEventListener('click', () => {
-//   burgerToggle.checked = !burgerToggle.checked;
-// });
-
-
-
 document.addEventListener("DOMContentLoaded", function () {
   const burgerToggle = document.querySelector('#burger-toggle'); // Чекбокс для управления меню
   const navToggle = document.querySelector('.nav-toggle');
