@@ -13,12 +13,10 @@
         color: $color_black;
     }
 
-    .body {
-        background-color: $color_fill;
-    }
 
     .policy-section {
         padding-bottom: 24px;
+        background-color: $color_fill;
     }
 
     .primary-title {
@@ -61,6 +59,10 @@
         color: $color_blue_link;
     }
 
+    .back-home-btn {
+        fill: $color_black;
+    }
+
 
 
 }
@@ -98,4 +100,10 @@
         margin-top: 28px;
         margin-left: 0;
     }
+
+    .link-back-home:hover,
+    .link-back-home:focus {
+        color: $color_orange;
+    }
+
 }
