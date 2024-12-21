@@ -26,8 +26,22 @@
         font-weight: 600;
         font-size: 18px;
         line-height: 1.78;
+        padding: 4px 8px;
         text-decoration: underline;
         color: $color_white;
+    }
+
+    .link-privacy:hover,
+    .link-privacy:focus,
+    .link-terms:hover,
+    .link-terms:focus {
+        color: $color_orange_light;
+    }
+
+    .link-privacy:active,
+    .link-terms:active {
+        border-radius: 8px;
+        background-color: $color_braun_light;
     }
 
     .copy-text {

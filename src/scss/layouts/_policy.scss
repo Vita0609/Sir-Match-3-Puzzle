@@ -64,6 +64,7 @@
     }
 
 
+
 }
 
 @include media(desktop) {
@@ -99,4 +100,10 @@
         margin-top: 28px;
         margin-left: 0;
     }
+
+    .link-back-home:hover,
+    .link-back-home:focus {
+        color: $color_orange;
+    }
+
 }
