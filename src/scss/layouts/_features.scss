@@ -74,3 +74,12 @@
   @include body4;
   padding-left: calc(10px + 24.2px)
 }
+
+.features-list {
+  display: flex; // Устанавливаем flex-контейнер
+  flex-wrap: wrap; // Позволяет элементам переноситься
+  gap: 24px; // Расстояние между элементами
+  padding: 0; // Убираем внутренние отступы списка
+  margin: 0; // Убираем внешние отступы списка
+  list-style: none;
+}
