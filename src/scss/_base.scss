@@ -9,8 +9,12 @@
   overflow: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .section {
-  padding: 24px 0; // за секцію поки не розумію, поговорим з дизайнером розберемся, скрізь різна відстань
+  padding: 24px 0;
 
   @include media(desktop) {
     padding: 48px 0;
@@ -29,13 +33,13 @@
 }
 
 .title {
-  // color: $_main_text_color;
+
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
   line-height: 1.1em;
 
-  // це для всіх заголовків секцій, наче скрізь однакові
+
   @include media(desktop) {
     font-size: 36px;
   }

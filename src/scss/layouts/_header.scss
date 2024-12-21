@@ -1,7 +1,7 @@
 @include media(mobile) {
   .header {
 
-    .nav {
+    .nav-menu {
       background-color: $color_braun;
       display: flex;
       position: fixed;
@@ -43,6 +43,10 @@
         }
       }
 
+      .nav-menu {
+        display: none;
+      }
+
       .nav-list {
         display: flex;
         flex-direction: column;
@@ -67,7 +71,7 @@
   .header {
 
 
-    .nav {
+    .nav-menu {
       background-color: $color_braun;
       display: flex;
       position: fixed;
