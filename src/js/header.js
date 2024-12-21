@@ -7,46 +7,33 @@
 
 
 
-// const menuToggle = document.getElementById('menu-toggle');
-// const navMenu = document.getElementById('nav-menu');
+document.addEventListener("DOMContentLoaded", function () {
+  const burgerToggle = document.querySelector('#burger-toggle'); // Чекбокс для управления меню
+  const navToggle = document.querySelector('.nav-toggle'); // Кнопка для бургер-меню
 
-// menuToggle.addEventListener('click', () => {
-//   navMenu.classList.toggle('active');
-// });
-
-
-document.addEventListener("DOMContentLoaded", function() {
-  const burgerToggle = document.getElementById('burger-toggle');
-  const navList = document.querySelector('.nav-list');
-
-  // Переключение видимости списка при изменении состояния чекбокса
-  burgerToggle.addEventListener('change', function() {
-    if (burgerToggle.checked) {
-      navList.style.display = 'flex';  // Показываем меню
-    } else {
-      navList.style.display = 'none';  // Скрываем меню
-    }
+  // Когда кликаем на кнопку бургер-меню, переключаем состояние чекбокса
+  navToggle.addEventListener('click', () => {
+    burgerToggle.checked = !burgerToggle.checked; // Переключаем состояние чекбокса
   });
 
-  // Плавный скроллинг к секциям
+  // Плавный переход между секциями
   const navLinks = document.querySelectorAll('.nav-link');
-
   navLinks.forEach(link => {
-    link.addEventListener('click', function(e) {
+    link.addEventListener('click', function (e) {
       e.preventDefault(); // Отменяем стандартный переход
 
-      // Получаем ID секции
-      const targetId = this.getAttribute('href').substring(1);  // Убираем '#'
+      // Получаем ID секции и прокручиваем к ней
+      const targetId = this.getAttribute('href').substring(1); // Убираем символ #
       const targetElement = document.getElementById(targetId);
 
       if (targetElement) {
-        // Прокручиваем к секции с плавным эффектом
+        // Прокручиваем к секции
         targetElement.scrollIntoView({ behavior: 'smooth' });
       }
 
-      // Закрываем меню после клика на мобильных устройствах
+      // Закрываем бургер-меню после клика на мобильных устройствах
       if (burgerToggle.checked) {
-        burgerToggle.checked = false;  // Скрываем меню
+        burgerToggle.checked = false; // Скрываем меню
       }
     });
   });

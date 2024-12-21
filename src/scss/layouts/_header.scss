@@ -13,9 +13,7 @@
       border-radius: 0px 0px 16px 16px;
       z-index: 99;
       max-width: 288px;
-      // left: 50%; // Центрируем
-      // transform: translateX(-50%); // Выравниваем по центру
-      // width: calc(100% - 32px);
+
 
 
       &:has(#burger-toggle:checked) {
@@ -31,7 +29,7 @@
             display: none;
           }
 
-          ~.nav-list {
+          .nav-list {
             display: none;
           }
         }
@@ -103,6 +101,8 @@
         .nav-item {
           min-width: 74px;
 
+
+
           &:nth-child(n + 7) {
             display: none;
           }
@@ -110,7 +110,9 @@
 
         .nav-link {
           @include button;
+
         }
+
       }
     }
   }
