@@ -112,15 +112,15 @@
 
     display: flex;
     justify-content: center;
-    gap: 53px;
 
 
-    // .container {
-    //   display: flex;
-    //   justify-content: space-between;
-    //   gap: 53px;
 
-    // }
+    .container {
+      display: flex;
+      justify-content: space-between;
+      gap: 53px;
+
+    }
   }
 
   .about-us-item {
