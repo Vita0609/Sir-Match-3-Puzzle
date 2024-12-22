@@ -109,7 +109,10 @@
 
 @include media(desktop) {
   .about-us {
-    padding: 96px 72px;
+    // padding: 96px 72px;
+    display: flex;
+    justify-content: center;
+
 
     .container {
       display: flex;
@@ -128,7 +131,7 @@
     justify-content: center;
     align-items: center;
     box-shadow: inset 0 0 0 25px $color_orange;
-    width: 448px;
+    width: 488px;
     height: 368px;
     // position: relative;
   }
@@ -139,6 +142,7 @@
     margin-bottom: 64px;
     color: $color_black;
     font-weight: 700;
+    margin-left: -29px;
   }
 
 
