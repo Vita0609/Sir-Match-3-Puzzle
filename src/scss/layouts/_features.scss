@@ -211,25 +211,25 @@
     }
   }
 
-  .wrapper-gr {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    border-radius: 0 120px 120px 0;
-    width: 1038px;
-    height: 664px;
-    background-color: $color_fill_green;
-  }
+  // .wrapper-gr {
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 0;
+  //   transform: translateY(-50%);
+  //   border-radius: 0 120px 120px 0;
+  //   width: 1038px;
+  //   height: 664px;
+  //   background-color: $color_fill_green;
+  // }
 
-  .wrapper-yel {
-    position: absolute;
-    top: 48%;
-    right: 0;
-    transform: translateY(-50%);
-    border-radius: 96px 0 0 96px;
-    width: 678px;
-    height: 424px;
-    background-color: $color_orange_light;
-  }
+  // .wrapper-yel {
+  //   position: absolute;
+  //   top: 48%;
+  //   right: 0;
+  //   transform: translateY(-50%);
+  //   border-radius: 96px 0 0 96px;
+  //   width: 678px;
+  //   height: 424px;
+  //   background-color: $color_orange_light;
+  // }
 }
