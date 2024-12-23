@@ -17,7 +17,6 @@
       align-items: center;
       border-radius: 0px 0px 16px 16px;
       z-index: 99;
-      // max-width: 288px;
       height: 64px;
       transition: color 0.3s ease, transform 0.3s ease;
 
@@ -71,9 +70,9 @@
         background-color: $color_fill_green;
         color: $color_black;
 
-        &.nav-open {
-          display: flex;
-        }
+        // &.nav-open {
+        //   display: flex;
+        // }
 
         .nav-link {
           @include body4;
@@ -85,8 +84,7 @@
 
 @include media(desktop) {
   .header {
-    display: flex !important;
-    // position: relative;
+    display: flex;
     align-items: center;
 
     .logo {
@@ -94,7 +92,7 @@
     }
 
     .nav-menu {
-      display: flex !important;
+      display: flex;
       justify-content: space-between;
       position: fixed;
       left: 50%;
@@ -108,7 +106,7 @@
       width: 100%;
       box-sizing: border-box;
       background-color: $color_braun;
-      position: relative;
+      top: 0;
 
 
       #burger-toggle,
@@ -117,7 +115,7 @@
       }
 
       .nav-list {
-        display: flex !important;
+        display: flex !important; // important
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
