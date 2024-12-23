@@ -88,6 +88,7 @@
     display: flex !important;
     justify-content: center;
     position: relative;
+    align-items: center;
 
     .logo {
       width: 56px;
@@ -96,7 +97,7 @@
     .nav-menu {
       display: flex !important;
       justify-content: space-between;
-      align-items: center;
+      // align-items: center;
       position: fixed;
       left: 50%;
       transform: translateX(-50%);
@@ -109,6 +110,7 @@
       width: 100%;
       box-sizing: border-box;
       background-color: $color_braun;
+      position: relative;
 
 
       #burger-toggle,
@@ -128,6 +130,7 @@
         list-style: none;
         padding: 0;
         margin: 0;
+        position: static;
 
 
         .nav-item {
