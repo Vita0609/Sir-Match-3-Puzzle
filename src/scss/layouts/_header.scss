@@ -8,7 +8,7 @@
 
     .nav-menu {
       background-color: $color_braun;
-      display: none; //было flex
+      display: flex; //было none
       position: fixed;
       left: 16px;
       right: 16px;
@@ -86,7 +86,7 @@
 @include media(desktop) {
   .header {
     display: flex !important;
-    justify-content: center;
+    // justify-content: center;
     position: relative;
     align-items: center;
 
