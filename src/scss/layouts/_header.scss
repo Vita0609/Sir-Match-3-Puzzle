@@ -86,7 +86,7 @@
 @include media(desktop) {
   .header {
     display: flex !important;
-    position: relative;
+    // position: relative;
     align-items: center;
 
     .logo {
