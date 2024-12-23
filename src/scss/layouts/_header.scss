@@ -2,15 +2,13 @@
   .header {
 
     .logo {
-      // display: block;
-      // max-width: 100%;
       width: 32px;
-      // height: 100%;
+
     }
 
     .nav-menu {
       background-color: $color_braun;
-      display: flex;
+      display: none; //было flex
       position: fixed;
       left: 16px;
       right: 16px;
@@ -85,69 +83,9 @@
   }
 }
 
-// @include media(desktop) {
-//   .header {
-
-
-
-//     .logo {
-//       width: 56px;
-//     }
-
-//     .nav-menu {
-//       background-color: $color_braun;
-//       display: flex;
-//       position: fixed;
-//       right: 72px;
-//       padding: 24px;
-//       justify-content: space-between;
-//       align-items: center;
-//       border-radius: 0px 0px 24px 24px;
-//       z-index: 99;
-//       max-width: 1056px;
-//       width: calc(100% - 144px);
-//       transform: translateX(-50%);
-//       left: 50%;
-//       height: 88px;
-
-//       #burger-toggle,
-//       .nav-toggle {
-//         display: none;
-//       }
-
-//       .nav-list {
-//         display: flex !important;
-//         position: static;
-//         flex-direction: row;
-//         gap: 86px;
-//         color: $color_white;
-//         background-color: transparent;
-//         height: 100%;
-
-//         .nav-item {
-//           min-width: 74px;
-
-
-
-//           &:nth-child(n + 7) {
-//             display: none;
-//           }
-//         }
-
-//         .nav-link {
-//           @include button;
-
-//         }
-
-//       }
-//     }
-//   }
-// }
-
-//
 @include media(desktop) {
   .header {
-    display: flex;
+    display: flex !important;
     justify-content: center;
     position: relative;
 
@@ -156,7 +94,7 @@
     }
 
     .nav-menu {
-      display: flex;
+      display: flex !important;
       justify-content: space-between;
       align-items: center;
       position: fixed;
@@ -179,7 +117,7 @@
       }
 
       .nav-list {
-        display: flex;
+        display: flex !important;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
