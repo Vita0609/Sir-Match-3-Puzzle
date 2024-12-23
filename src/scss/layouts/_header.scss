@@ -1,6 +1,12 @@
 @include media(mobile) {
   .header {
 
+    .logo {
+      display: block;
+      max-width: 100%;
+      width: 32px;
+      height: 100%;
+    }
 
     .nav-menu {
       background-color: $color_braun;
@@ -33,6 +39,7 @@
         &:not(:checked) {
           +.nav-toggle .nav-close {
             display: none;
+
           }
 
           // .nav-list {
@@ -53,9 +60,9 @@
         display: none;
       }
 
-      .nav-list {
-        display: none;
-      }
+      // .nav-list {
+      //   display: none;
+      // }
 
       .nav-list {
         display: none;
