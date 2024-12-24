@@ -1,70 +1,83 @@
 @include media(mobile) {
-    .faq {
-        padding-top: 56px;
-        padding-bottom: 56px;
-        background: linear-gradient(180deg, #97d846 0%, #7cb633 100%);
-    }
+  .faq {
+    padding-top: 56px;
+    padding-bottom: 56px;
+    background: linear-gradient(180deg, #97d846 0%, #7cb633 100%);
+  }
 
-    .faq-title {
-        margin-bottom: 32px;
-        font-family: var(--font-family);
-        font-weight: 700;
-        font-size: 32px;
-        line-height: 1.5;
-        color: $color_black;
-    }
+  .faq-title {
+    margin-bottom: 32px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.5;
+    color: $color_black;
+  }
 
-    .ac-header {
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        border: 2px solid $color_orange_stroke;
-        border-radius: 24px;
-        padding: 16px;
-        width: 288px;
-        height: 80px;
-        background-color: $color_fill;
-    }
+  .ac-header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 16px;
+    width: 288px;
+    height: 80px;
+  }
 
 
-    .ac .ac-trigger {
-        font-family: var(--font-family) !important;
-        font-weight: 700 !important;
-        font-size: 14px !important;
-        line-height: 1.71 !important;
-        width: 90% !important;
-        padding: 16px !important;
-        padding-right: 25px !important;
-        color: $color_braun_text !important;
-    }
+  .ac .ac-trigger {
 
-    .ac .ac-trigger::after {
-        content: url('/img/downbtn.svg') !important;
-        fill: $color_black !important;
-    }
+    @include h2;
+    width: 90% !important;
+    padding: 0px !important;
+    padding-right: 25px !important;
+    color: $color_braun_text !important;
+  }
+
+  .ac .ac-trigger::after {
+    content: url('/img/downbtn.svg') !important;
+    fill: $color_black !important;
+    width: 32px !important;
+    height: 32px !important;
+    transition: 1s !important;
+    transform: none !important;
+    top: 20px !important;
+    line-height: 0px !important;
+
+  }
+
+  .ac.is-active>.ac-header .ac-trigger::after {
+    rotate: 180deg !important;
 
 
+  }
 
-    .ac {
-        border: none !important;
-        background-color: transparent !important;
-    }
+  .ac {
+    background-color: $color_fill !important;
+
+    border: 2px solid $color_orange_stroke !important;
+    border-radius: 24px;
+  }
+
+  .ac-text {
+    @include subtitle;
+    padding: 0 26px 32px !important;
+  }
 }
 
 @include media(desktop) {
-    .faq-title {
-        font-size: 48px;
-        margin-bottom: 64px;
-    }
+  .faq-title {
+    font-size: 48px;
+    margin-bottom: 64px;
+  }
 
-    .ac-header {
-        width: 1056px;
-        justify-content: center;
-    }
+  .ac-header {
+    width: 1056px;
+    justify-content: center;
+  }
 
-    .ac .ac-trigger {
-        width: 95% !important;
-        font-size: 20px !important;
-        font-weight: 600 !important;
-    }
+  .ac .ac-trigger {
+    width: 95% !important;
+    font-size: 20px !important;
+    font-weight: 600 !important;
+  }
 }
