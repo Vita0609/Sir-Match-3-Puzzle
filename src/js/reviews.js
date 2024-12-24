@@ -4,11 +4,6 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 new Swiper('.swiper', {
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-    enabled: true,
-  },
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
