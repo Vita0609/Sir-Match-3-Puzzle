@@ -1,42 +1,90 @@
 <section class="reviews-section" id="reviews">
     <div class="container">
         <h2 class="reviews-title">Reviews</h2>
-        <swiper-container class="mySwiper" space-between="20" history-key="slide" pagination="true" navigation="true">
-            <swiper-slide data-history=" 1">
-                <div class="slide">
-                    <img src="./img/avatar1.png" alt="avatar1">
-                    <h3 class="slider-title">PuzzleMaster</h3>
-                    <p>"A fantastic match-3 adventure! The levels are creative and the story keeps me hooked."</p>
+        <div class="swiper img-swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="image-slide">
+                        <div class="wrapper-img-title">
+                            <div class="img-box">
+                                <img src="./img/avatar1.png" alt="avatar1" />
+                            </div>
+                            <div class="wrapper-stars">
+                                <h3 class="img-title">PuzzleMaster</h3>
+                                <img src="./img/svg/stars_pc.svg" alt="stars">
+                            </div>
+                        </div>
+                        <p class="img-text">"A fantastic match-3 adventure! The levels are creative and the story keeps
+                            me hooked."</p>
+                    </div>
                 </div>
-            </swiper-slide>
-            <swiper-slide data-history="Slide 2">
-                <div class="slide">
-                    <img src="./img/avatar2.png" alt="avatar2">
-                    <h3 class="slider-title">GameFanatic</h3>
-                    <p>"Great puzzle game with an amazing story. The graphics and animations are stunning!"</p>
+                <div class="swiper-slide">
+                    <div class="image-slide">
+                        <div class="wrapper-img-title">
+                            <div class="img-box">
+                                <img src="./img/avatar2.png" alt="avatar2" />
+                            </div>
+                            <div class="wrapper-stars">
+                                <h3 class="img-title">GameFanatic</h3>
+                                <img src="./img/svg/stars_pc.svg" alt="stars">
+                            </div>
+                        </div>
+                        <p class="img-text">"Great puzzle game with an amazing story. The graphics and animations are
+                            stunning!"</p>
+                    </div>
                 </div>
-            </swiper-slide>
-            <swiper-slide data-history="3">
-                <div class="slide">
-                    <img src="./img/avatar3.png" alt="avatar3">
-                    <h3 class="slider-title">GemMatchPro</h3>
-                    <p>"Challenging puzzles and fun gameplay. I can’t put it down!"</p>
+                <div class="swiper-slide">
+                    <div class="image-slide">
+                        <div class="wrapper-img-title">
+                            <div class="img-box">
+                                <img src="./img/avatar3.png" alt="avatar3" />
+                            </div>
+                            <div class="wrapper-stars">
+                                <h3 class="img-title">GemMatchPro</h3>
+                                <img src="./img/svg/stars_pc.svg" alt="stars">
+                            </div>
+                        </div>
+                        <p class="img-text">"Challenging puzzles and fun gameplay. I can’t put it down!"</p>
+                    </div>
                 </div>
-            </swiper-slide>
-            <swiper-slide data-history="Slide 4">
-                <div class="slide">
-                    <img src="./img/avatar4.png" alt="avatar4">
-                    <h3 class="slider-title">AdventureLover</h3>
-                    <p>"Love the adventure aspect combined with the match-3 gameplay. So much fun!"</p>
+                <div class="swiper-slide">
+                    <div class="image-slide">
+                        <div class="wrapper-img-title">
+                            <div class="img-box">
+                                <img src="./img/avatar4.png" alt="avatar4" />
+                            </div>
+                            <div class="wrapper-stars">
+                                <h3 class="img-title">AdventureLover</h3>
+                                <img src="./img/svg/stars_pc.svg" alt="stars">
+                            </div>
+                        </div>
+                        <p class="img-text">"Love the adventure aspect combined with the match-3 gameplay. So much fun!"
+                        </p>
+                    </div>
                 </div>
-            </swiper-slide>
-            <swiper-slide data-history="5">
-                <div class="slide">
-                    <img src="./img/avatar5.png" alt="avatar5">
-                    <h3 class="slider-title">MysterySolver</h3>
-                    <p>"Exciting and challenging! Every level feels like a new adventure."</p>
+                <div class="swiper-slide">
+                    <div class="image-slide">
+                        <div class="wrapper-img-title">
+                            <div class="img-box">
+                                <img src="./img/avatar5.png" alt="avatar5" />
+                            </div>
+                            <div class="wrapper-stars">
+                                <h3 class="img-title">MysterySolver</h3>
+                                <img src="./img/svg/stars_pc.svg" alt="stars">
+                            </div>
+                        </div>
+                        <p class="img-text">"Exciting and challenging! Every level feels like a new adventure."</p>
+                    </div>
                 </div>
-            </swiper-slide>
-        </swiper-container>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev  prev-btn"></div>
+            <div class="swiper-button-next next-btn"></div>
+        </div>
     </div>
 </section>
