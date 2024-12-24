@@ -14,43 +14,42 @@
         color: $color_black;
     }
 
-    .slide {
-        border-radius: 32px;
-        padding: 32px;
-        width: 248px;
-        height: 218px;
-        background-color: $color_fill_green;
+    .img-swiper {
+        position: relative;
     }
 
-    .slider-title {
+    .img-box {
+        width: 64px;
+        height: 64px;
+    }
+
+    .wrapper-img-title {
+        display: flex;
+        align-items: flex-start;
+        gap: 16px;
+        margin-bottom: 24px;
+    }
+
+    .wrapper-stars {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .img-text {
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.57;
+        color: $color_black;
+    }
+
+    .img-title {
         font-family: var(--font-family);
         font-weight: 600;
         font-size: 20px;
         line-height: 1.6;
         color: $color_black;
-    }
-
-
-    .mySwiper {
-        width: 976px !important;
-        height: 100%;
-    }
-
-    .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .swiper-slide-active {
-        width: 312px !important;
-    }
-
-    .swiper-slide-next {
-        width: 312px !important;
     }
 
     .swiper-slide img {
@@ -60,4 +59,41 @@
         object-fit: cover;
     }
 
+    .image-slide {
+        height: 154px;
+        border-radius: 32px;
+        padding: 32px;
+        background-color: $color_fill_green;
+    }
+
+    .prev-btn,
+    .next-btn {
+        color: $color_black !important;
+        width: 32px !important;
+        height: 32px !important;
+    }
+}
+
+
+@include media(mobile) {
+    .image-slide {
+        height: 168px;
+        border-radius: 32px;
+        padding: 16px;
+        background-color: $color_fill_green;
+    }
+
+    .reviews-title {
+        margin-bottom: 32px;
+    }
+
+    .reviews-section {
+        padding-top: 56px;
+        padding-bottom: 56px;
+    }
+
+    .img-title {
+        font-weight: 700;
+        font-size: 14px;
+    }
 }
