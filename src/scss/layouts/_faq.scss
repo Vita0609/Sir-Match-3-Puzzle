@@ -1,6 +1,17 @@
 @include media(mobile) {
     .faq {
+        padding-top: 56px;
+        padding-bottom: 56px;
         background: linear-gradient(180deg, #97d846 0%, #7cb633 100%);
+    }
+
+    .faq-title {
+        margin-bottom: 32px;
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 1.5;
+        color: $color_black;
     }
 
     .ac-header {
@@ -32,19 +43,28 @@
         fill: $color_black !important;
     }
 
-    .ac.is-active {
-        border: 2px solid $color_orange_stroke !important;
-        border-radius: 24px !important;
-        padding: 16px !important;
-        width: 288px !important;
-        height: 138px !important;
-        background-color: $color_fill !important;
-    }
+
 
     .ac {
         border: none !important;
         background-color: transparent !important;
     }
+}
 
+@include media(desktop) {
+    .faq-title {
+        font-size: 48px;
+        margin-bottom: 64px;
+    }
 
+    .ac-header {
+        width: 1056px;
+        justify-content: center;
+    }
+
+    .ac .ac-trigger {
+        width: 95% !important;
+        font-size: 20px !important;
+        font-weight: 600 !important;
+    }
 }

@@ -1,6 +1,5 @@
 @include media(mobile) {
   .benefits {
-    position: relative;
     padding: 56px 0;
     background-color: $color_green_dark;
   }
@@ -142,6 +141,10 @@
   .benefits-title {
     font-weight: 700;
     font-size: 16px;
+  }
+
+  .container {
+    position: relative;
   }
 
   .green-wrap {
