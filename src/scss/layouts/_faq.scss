@@ -2,7 +2,7 @@
   .faq {
     padding-top: 56px;
     padding-bottom: 56px;
-    background: linear-gradient(180deg, #97d846 0%, #7cb633 100%);
+    background-color: $color_green_dark;
   }
 
   .faq-title {
@@ -12,6 +12,50 @@
     font-size: 32px;
     line-height: 1.5;
     color: $color_black;
+  }
+
+}
+
+@include media(desktop) {
+
+  .faq {
+    height: 800px;
+  }
+
+  .accordion-container {
+    position: sticky;
+  }
+
+  .container-faq {
+    position: relative;
+  }
+
+  .green-rectangle {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-42%);
+    border-radius: 0 120px 120px 0;
+    width: 1038px;
+    height: 701px;
+    background-color: $color_fill_green;
+  }
+
+  .yellow-rectangle {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-37%);
+    border-radius: 96px 0 0 96px;
+    width: 844px;
+    height: 520px;
+    background-color: $color_orange_light;
+  }
+
+  .faq-title {
+    position: sticky;
+    font-size: 48px;
+    margin-bottom: 64px;
   }
 
   .ac-header {
@@ -25,7 +69,6 @@
 
 
   .ac .ac-trigger {
-
     @include h2;
     width: 90% !important;
     padding: 0px !important;
@@ -47,13 +90,10 @@
 
   .ac.is-active>.ac-header .ac-trigger::after {
     rotate: 180deg !important;
-
-
   }
 
   .ac {
     background-color: $color_fill !important;
-
     border: 2px solid $color_orange_stroke !important;
     border-radius: 24px;
   }
@@ -61,13 +101,6 @@
   .ac-text {
     @include subtitle;
     padding: 0 26px 32px !important;
-  }
-}
-
-@include media(desktop) {
-  .faq-title {
-    font-size: 48px;
-    margin-bottom: 64px;
   }
 
   .ac-header {
