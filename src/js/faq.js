@@ -1,47 +1,46 @@
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 
-const acc = new Accordion('.accordion-container');
+// const acc = new Accordion('.accordion-container');
 
-// // Импорт библиотеки и стилей
-// document.addEventListener('DOMContentLoaded', () => {
-//   // Найти все элементы аккордеона
-//   const accordions = document.querySelectorAll('.ac');
+// document.addEventListener("DOMContentLoaded", () => {
+//   // Находим все кнопки-триггеры
+//   const triggers = document.querySelectorAll(".ac-trigger");
 
-//   // Пройтись по каждому элементу
-//   accordions.forEach((accordion) => {
-//     const trigger = accordion.querySelector('.ac-trigger'); // Кнопка
-//     const panel = accordion.querySelector('.ac-panel'); // Контейнер с текстом
+//   triggers.forEach((trigger) => {
+//     trigger.addEventListener("click", (event) => {
+//       const currentTrigger = event.currentTarget;
+//       const parent = currentTrigger.closest(".ac"); // Родительский элемент с классом .ac
+//       const panel = parent.querySelector(".ac-panel"); // Панель, которая должна раскрываться
 
-//     // Убедиться, что элементы найдены
-//     if (trigger && panel) {
-//       // Скрыть все панели изначально
-//       panel.style.display = 'none';
+//       // Проверяем, открыт ли уже текущий элемент
+//       const isActive = parent.classList.contains("is-active");
 
-//       // Добавить обработчик события на клик
-//       trigger.addEventListener('click', () => {
-//         const isActive = accordion.classList.contains('is-active');
-
-//         // Закрыть все открытые панели
-//         accordions.forEach((item) => {
-//           item.classList.remove('is-active');
-//           const itemPanel = item.querySelector('.ac-panel');
-//           const itemTrigger = item.querySelector('.ac-trigger');
-//           if (itemPanel) {
-//             itemPanel.style.display = 'none';
-//           }
-//           if (itemTrigger) {
-//             itemTrigger.classList.remove('rotated'); // Убрать поворот стрелки
-//           }
-//         });
-
-//         // Открыть текущую панель, если она была закрыта
-//         if (!isActive) {
-//           accordion.classList.add('is-active');
-//           panel.style.display = 'block';
-//           trigger.classList.add('rotated'); // Добавить класс для поворота стрелки
-//         }
+//       // Закрываем все активные панели
+//       const allPanels = document.querySelectorAll(".ac.is-active");
+//       allPanels.forEach((activeItem) => {
+//         activeItem.classList.remove("is-active");
+//         const activePanel = activeItem.querySelector(".ac-panel");
+//         activePanel.style.maxHeight = null; // Убираем высоту для скрытия
 //       });
-//     }
+
+//       // Если текущая панель не была активна — открываем её
+//       if (!isActive) {
+//         parent.classList.add("is-active");
+//         panel.style.maxHeight = panel.scrollHeight + "px"; // Устанавливаем высоту по содержимому
+//       }
+//     });
 //   });
 // });
+// script.js
+// import Accordion from 'accordion-js';
+// import 'accordion-js/dist/accordion.min.css';
+
+// Инициализация аккордеона
+document.addEventListener("DOMContentLoaded", () => {
+  const acc = new Accordion('.accordion-container', {
+    duration: 300, // Скорость анимации
+    showMultiple: false, // Разрешить только одну открытую панель
+    openOnInit: [0], // Открыть первый элемент при загрузке
+  });
+});
