@@ -5,6 +5,12 @@
     background-color: $color_green_dark;
   }
 
+  .ac {
+    background-color: $color_fill !important;
+    border: 2px solid $color_orange_stroke !important;
+    border-radius: 24px;
+  }
+
   .faq-title {
     margin-bottom: 32px;
     font-family: var(--font-family);
@@ -12,6 +18,41 @@
     font-size: 32px;
     line-height: 1.5;
     color: $color_black;
+  }
+
+
+  .ac-text {
+    @include subtitle;
+    padding: 16px !important;
+    font-size: 14px !important;
+  }
+
+
+  .ac .ac-trigger {
+    width: 95% !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    padding: 16px !important;
+    padding-right: 35px !important;
+    line-height: 1.71 !important;
+    color: $color_braun_text !important;
+  }
+
+
+  .ac .ac-trigger::after {
+    content: url('/img/downbtn.svg') !important;
+    fill: $color_black !important;
+    top: 35% !important;
+    right: 0 !important;
+    width: 32px !important;
+    height: 32px !important;
+    transition: 1s !important;
+    transform: translateY(-50%);
+    line-height: 0px !important;
+  }
+
+  .ac.is-active>.ac-header .ac-trigger::after {
+    rotate: 180deg !important;
   }
 
 }
@@ -85,7 +126,6 @@
     transform: none !important;
     top: -6px !important;
     line-height: 0px !important;
-
   }
 
   .ac.is-active>.ac-header .ac-trigger::after {
