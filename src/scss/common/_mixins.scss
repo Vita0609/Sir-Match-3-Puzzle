@@ -48,11 +48,11 @@ screen types:
 }
 
 @mixin h2 {
-  font-family: 'Poppins' !important;
-  font-weight: 700 !important;
-  font-size: 48px !important;
-  letter-spacing: 0 !important;
-  line-height: 72px !important;
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 48px;
+  letter-spacing: 0;
+  line-height: 72px;
 }
 
 @mixin h3 {
@@ -89,11 +89,11 @@ screen types:
 }
 
 @mixin subtitle {
-  font-family: 'Poppins' !important;
-  font-weight: 500 !important;
-  font-size: 18px !important;
-  letter-spacing: 0 !important;
-  line-height: 32px !important;
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 32px;
 }
 
 @mixin body1 {
