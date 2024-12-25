@@ -1,5 +1,6 @@
 @include media(mobile) {
   .faq {
+    scroll-margin-top: 100px;
     padding-top: 56px;
     padding-bottom: 56px;
     background: linear-gradient(180deg, #97d846 0%, #7cb633 100%);

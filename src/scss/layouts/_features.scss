@@ -1,5 +1,6 @@
 @include media(mobile) {
   .features {
+    scroll-margin-top: 100px;
     padding: 56px 0px;
     background-color: $color_green_dark;
   }

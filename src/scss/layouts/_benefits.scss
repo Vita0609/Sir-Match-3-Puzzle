@@ -1,5 +1,6 @@
 @include media(mobile) {
   .benefits {
+    scroll-margin-top: 100px;
     padding: 56px 0;
     background-color: $color_green_dark;
   }
